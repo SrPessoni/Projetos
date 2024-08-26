@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styleCarrinho.css">
+    <script async src="script.js"></script>
+</head>
+<body> 
+    <div class="carrinho">
+        <div class="cabecalhoCarrinho">
+            <button>
+                <i class="bx bx-chevron-left"></i>
+            </button>
+            <h3>Meu Carrinho</h3>
+        </div>
+        <ul>
+            <li class="carrinhoItem">
+                <div class="imagem">
+                    <img src="fotos/hamburger.png" alt="Foto de um hambúrguer">
+                </div>
+                <div class="info">
+                    <h4>Hambúrguer</h4>
+                    <div class="detalhes">
+                        <div class="tempo">
+                            <i class="bx bxs-timer"></i>
+                            <span>15 min</span>
+                        </div>
+                        <div class="status">
+                           <i class="bx bxs-package"></i>
+                           <span>Pronto</span> 
+                        </div>
+                    </div>
+                    <div class="preco">
+                        <p>R$25,80</p>
+                        <div class="contador">
+                            <i class="removerItens bx bx-x"></i>
+                            <i class="bx bx-minus"></i>
+                            <span>1</span>
+                            <i class="bx bx-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="carrinhoItem">
+                <div class="imagem">
+                    <img src="fotos/frango.png" alt="Foto de um frango frito">
+                </div>
+                <div class="info">
+                    <h4>Frango Frito</h4>
+                    <div class="detalhes">
+                        <div class="tempo">
+                            <i class="bx bxs-timer"></i>
+                            <span>15 min</span>
+                        </div>
+                        <div class="status">
+                           <i class="bx bxs-package"></i>
+                           <span>Pronto</span> 
+                        </div>
+                    </div>
+                    <div class="preco">
+                        <p>R$12,40</p>
+                        <div class="contador">
+                            <i class="removerItens bx bx-x"></i>
+                            <i class="bx bx-minus"></i>
+                            <span>1</span>
+                            <i class="bx bx-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="carrinhoItem">
+                <div class="imagem">
+                    <img src="fotos/rosquinha.png" alt="Foto de uma rosquinha">
+                </div>
+                <div class="info">
+                    <h4>Rosquinha</h4>
+                    <div class="detalhes">
+                        <div class="tempo">
+                            <i class="bx bxs-timer"></i>
+                            <span>15 min</span>
+                        </div>
+                        <div class="status">
+                           <i class="bx bxs-package"></i>
+                           <span>Pronto</span> 
+                        </div>
+                    </div>
+                    <div class="preco">
+                        <p>R$8,29</p>
+                        <div class="contador">
+                            <i class="removerItens bx bx-x"></i>
+                            <i class="bx bx-minus"></i>
+                            <span>1</span>
+                            <i class="bx bx-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <button class="totalPagar">Pagar R$0,00</button>
+    </div>
+</body>
+</html>
