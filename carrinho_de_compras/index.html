@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="nomeLoja">minhaloja.com</h1>
+        <button id="abrirCarrinho"><i class="bx bx-cart"></i></button>
+    </header>
+    <div class="produtos">
+        <h1 class="produtosItens">Produtos</h1>
+        <div class="produto">
+            <img class="produtoImagem" src="fotos/hamburger.png" alt="Foto de um hambúrguer">
+            <h2 class="produtoNome">Hambúrguer</h2>
+            <p class="produtoPreco">R$25,80</p>
+            <button class="adicionarCarrinho" data-produto="Hambúrguer" data-preco="25.80">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img class="produtoImagem" src="fotos/frango.png" alt="Foto de um frango frito">
+            <h2 class="produtoNome">Frango Frito</h2>
+            <p class="produtoPreco">R$12,40</p>
+            <button class="adicionarCarrinho" data-produto="Frango Frito" data-preco="12.40">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img class="produtoImagem" src="fotos/rosquinha.png" alt="Foto de uma rosquinha">
+            <h2 class="produtoNome">Rosquinha</h2>
+            <p class="produtoPreco">R$8,29</p>
+            <button class="adicionarCarrinho" data-produto="Rosquinha" data-preco="8.29">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <div class="side-bar" id="sideBarCarrinho">
+        <div class="carrinho">
+            <div class="cabecalhoCarrinho">
+                <button id="fecharCarrinho">
+                    <i class="bx bx-chevron-left"></i>
+                </button>
+                <h3>Meu Carrinho</h3>
+            </div>
+            <ul class="listaCarrinhoItem">
+            </ul>
+            <button class="totalPagar" style="display: none">Pagar R$0,00</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('abrirCarrinho').addEventListener('click', function() {
+            document.getElementById('sideBarCarrinho').classList.add('active');
+        });
+
+        document.getElementById('fecharCarrinho').addEventListener('click', function() {
+            document.getElementById('sideBarCarrinho').classList.remove('active');
+        });
+    </script>
+</body>
+</html>

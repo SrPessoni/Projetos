@@ -1,0 +1,287 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    user-select: none;
+    border: none;
+}
+
+/* Variáveis CSS */
+:root {
+    --cor-primaria: #9800ce;
+    --cor-secundaria: #2a2f43ea;
+    --cor-fundo: #f5f5f5;
+    --cor-branca: #fff;
+    --cor-cinza: #ddddde;
+    --cor-vermelha: #ff4d4d;
+    --fonte-poppins: 'Poppins', sans-serif;
+}
+
+/* Estilos do Corpo */
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-poppins);
+    display: flex;
+    flex-direction: column; /* Alinha os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+/* Cabeçalho */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--cor-primaria);
+    color: var(--cor-branca);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 18px #2a2f430f;
+    z-index: 10;
+}
+
+.header button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--cor-branca);
+    font-size: 1.5rem;
+}
+
+/* Seção de Produtos */
+.produtos {
+    width: 80%; /* Largura da seção de produtos */
+    max-width: 1200px; /* Largura máxima da seção de produtos */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 60px; /* Mantém o espaço necessário para o cabeçalho fixo */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens de produtos */
+}
+
+.produtos .produtosItens {
+    text-align: center;
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--cor-branca);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 18px #2a2f430f;
+    transition: transform 0.3s;
+    width: 30%; /* Largura dos produtos, você pode ajustar */
+    box-sizing: border-box;
+}
+
+.produto img {
+    width: auto;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.produto .produtoNome {
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.produto .produtoPreco {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+}
+
+.produto button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: var(--cor-branca);
+    background: var(--cor-primaria);
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.produto button:hover {
+    background: #2a2f43f1;
+}
+
+/* Barra Lateral */
+.side-bar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background: var(--cor-fundo);
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.35);
+    transition: right 0.3s;
+    padding: 20px;
+    overflow-y: auto;
+    outline: 2px solid var(--cor-primaria);
+    outline-offset: -2px;
+    z-index: 10;
+}
+
+.side-bar.active {
+    right: 0;
+}
+
+/* Seção do Carrinho */
+.carrinho {
+    width: 100%;
+    background: var(--cor-fundo);
+    padding: auto;
+    border-radius: 8px;
+}
+
+.carrinho .cabecalhoCarrinho {
+    display: flex;
+    align-items: center;
+}
+
+.carrinho .cabecalhoCarrinho button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    line-height: 50%;
+    color: var(--cor-primaria);
+    background: var(--cor-cinza);
+    border: 2px solid var(--cor-cinza);
+    border-radius: 8px;
+    transition: .4s;
+}
+
+.carrinho .cabecalhoCarrinho button:hover {
+    color: var(--cor-branca);
+    background: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+.carrinho .cabecalhoCarrinho h3 {
+    margin: auto;
+    text-align: center;
+    font: 400 1.25rem var(--fonte-poppins);
+    color: var(--cor-primaria);
+}
+
+.carrinho .carrinhoItem {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 8rem;
+    margin: 30px 0;
+    background: var(--cor-branca);
+    border-radius: 8px;
+    box-shadow: 0 4px 18px #2a2f430f;
+}
+
+.carrinho .carrinhoItem .imagem {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.carrinho .carrinhoItem img {
+    width: 90%;
+}
+
+.carrinho .carrinhoItem .info {
+    width: 70%;
+    padding: 14px;
+}
+
+.carrinho .carrinhoItem .produtoCarrinhoNome {
+    color: var(--cor-primaria);
+    font: 700 1.25rem var(--fonte-poppins);
+}
+
+.carrinho .carrinhoItem .detalhes {
+    display: flex;
+    gap: 10px;
+}
+
+.carrinho .carrinhoItem .detalhes i {
+    color: #2a2f43d2;
+    font-size: 1.0625rem;
+    transform: translateY(3px);
+}
+
+.carrinho .carrinhoItem .detalhes span {
+    font: 600 0.75rem var(--fonte-poppins);
+    color: #2a204399;
+}
+
+.carrinho .carrinhoItem .preco .produtoCarrinhoPreco {
+    color: var(--cor-secundaria);
+    font: 700 1.125rem var(--fonte-poppins); 
+    margin-top: 8px;
+}
+
+.carrinho .carrinhoItem .contador {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+}
+
+.carrinho .carrinhoItem .contador i,
+.carrinho .carrinhoItem .contador .removerItens {
+    cursor: pointer;
+    width: 25px;
+    height: 35px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 35px;
+    color: var(--cor-branca);
+    border-radius: 8px 8px 0 0;
+    transition: background 0.3s;
+}
+
+.carrinho .carrinhoItem .contador i {
+    background: var(--cor-primaria);
+}
+
+.carrinho .carrinhoItem .contador .removerItens {
+    background: var(--cor-vermelha);
+}
+
+.carrinho .carrinhoItem .contador .removerItens:hover {
+    background: #ff1a1a;
+}
+
+/* Botão de Total a Pagar */
+.carrinho .totalPagar {
+    font: 500 1rem var(--fonte-poppins);
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 10px;
+    color: var(--cor-branca);
+    background: var(--cor-primaria);
+    border-radius: 8px;
+    transition: background 0.4s, transform 0.4s;
+    outline: none;
+}
+
+.carrinho .totalPagar:hover {
+    background: var(--cor-secundaria);
+}
+
+.carrinho .totalPagar:focus {
+    outline: none; 
+}
