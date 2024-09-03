@@ -8,7 +8,7 @@ function HoraDeComer() {
     var hora = data.getHours();
     var min = data.getMinutes();
     var seg = data.getSeconds();
-    horaDisplay.innerHTML= `Agora são ${hora} horas, ${min} minutos, ${seg} segundos`
+    horaDisplay.innerHTML= `Agora são ${hora} horas, ${min} minutos, ${seg} segundos!`
 
     if (hora >= 0 && hora < 11) {
         header.innerHTML= "<h1>Hora do Café-da-Manhã</h1>"
@@ -29,7 +29,7 @@ function HoraDeComer() {
         document.body.style.background = '#eb8a52'
     }
     else{
-        header.innerHTML= '<h1>Hora da janta</h1>'
+        header.innerHTML= '<h1>Hora da Janta</h1>'
         img.src = 'Janta.png'
         msg.innerHTML = 'Recomendamos: Salmão ao Molho de Maracujá!'
         document.body.style.background = '#515154'
