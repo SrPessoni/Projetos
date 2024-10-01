@@ -229,8 +229,7 @@ body {
 .carrinho .carrinhoItem .preco .produtoCarrinhoPreco {
     color: var(--cor-secundaria);
     font: 700 1.125rem var(--fonte-poppins); 
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin: 8px 0 8px 0;
 }
 
 .carrinho .carrinhoItem .contador {
