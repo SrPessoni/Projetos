@@ -230,6 +230,7 @@ body {
     color: var(--cor-secundaria);
     font: 700 1.125rem var(--fonte-poppins); 
     margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .carrinho .carrinhoItem .contador {
