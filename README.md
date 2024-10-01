@@ -1,4 +1,7 @@
 ---
+layout: default
+title: "Meus Projetos"
+---
 
 # Meus Projetos
 
@@ -52,5 +55,3 @@ Permite a inserção de idades e análise dos dados inseridos, identificando que
 - HTML
 - CSS
 - JavaScript
-
----
