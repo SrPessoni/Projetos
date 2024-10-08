@@ -8,7 +8,8 @@ title: "Meus Projetos"
 ## Visão Geral
 Abaixo estão alguns dos projetos que desenvolvi, cada um demonstrando diferentes habilidades e tecnologias.
 
-### Blog de Jogos
+### Blog de Jogos (Link Repositório: https://github.com/SrPessoni/Blog-de-Jogos)
+
 Um dos meus primeiros projetos, este blog oferece notícias sobre jogos, uma seção de "Game of the Year" e um sistema de compras por afiliados, com links que redirecionam para lojas de jogos.
 
 **Tecnologias Utilizadas:**
