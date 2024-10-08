@@ -25,6 +25,14 @@ Este projeto exemplifica um site de vendas com um sistema de carrinho de compras
 - CSS
 - JavaScript
 
+### Dashboard Admin (Link Repositório: https://github.com/SrPessoni/projeto_dashboard)
+Um projeto em React (apenas visual) que simula como seria um Dashboard de Admin de um site de venda de plantas.
+
+**Tecnologias Utilizadas:**
+- HTML
+- SCSS/CSS
+- JavaScript/JSX
+
 ### Projeto Fit
 Um site que recomenda refeições nutritivas com base na hora atual, ideal para quem deseja seguir uma dieta para perda de peso ou ganho de músculos.
 
@@ -40,14 +48,6 @@ Uma calculadora funcional integrada em um site, útil para sites que envolvem c�
 - HTML
 - CSS
 - JavaScript
-
-### Dashboard Admin (Link Repositório: https://github.com/SrPessoni/projeto_dashboard)
-Um projeto em React (apenas visual) que simula como seria um Dashboard de Admin de um site de venda de plantas.
-
-**Tecnologias Utilizadas:**
--- HTML
--- SCSS/CSS
--- JavaScript/JSX
 
 ### Ordenador
 Este projeto permite a inserção de números que são automaticamente ordenados de forma crescente, simulando a função "ORDER BY".
