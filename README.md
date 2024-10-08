@@ -41,6 +41,14 @@ Uma calculadora funcional integrada em um site, útil para sites que envolvem c�
 - CSS
 - JavaScript
 
+### Dashboard Admin (Link Repositório: https://github.com/SrPessoni/projeto_dashboard)
+Um projeto em React (apenas visual) que simula como seria um Dashboard de Admin de um site de venda de plantas.
+
+**Tecnologias Utilizadas:**
+-- HTML
+-- SCSS/CSS
+-- JavaScript/JSX
+
 ### Ordenador
 Este projeto permite a inserção de números que são automaticamente ordenados de forma crescente, simulando a função "ORDER BY".
 
