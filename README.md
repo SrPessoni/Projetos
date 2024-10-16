@@ -1,8 +1,3 @@
----
-layout: default
-title: "Meus Projetos"
----
-
 # Meus Projetos
 
 ## Visão Geral
